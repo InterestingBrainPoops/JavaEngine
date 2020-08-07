@@ -18,7 +18,7 @@ public class Camera{
         focusLen = newFocal;//need to add the update clause to update the focal point itself, but I'm not in the mood to do the math.
     }
     public float[] getDirection(){
-        return direction;
+        return dir;
     }
     public void setDirection(float[] newDirection){
         dir = newDirection; // same here
