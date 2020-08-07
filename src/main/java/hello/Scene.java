@@ -6,7 +6,7 @@ public class Scene{
         cam = camera;
         light = lightsource;
     }
-    public float[] getFocal(){
+    public float getFocal(){
         return cam.getFocal();
     }
     public float[] getLightPos(){
