@@ -3,6 +3,7 @@ public class Camera{
     private int[] res;
     private float focusLen;
     private float[] dir;
+    private float [] pos;
     public Camera(int[] Resolution, float focalLength, float[] direction, float[] position){
         res = Resolution;
         focusLen = focalLength;
