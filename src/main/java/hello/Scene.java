@@ -12,6 +12,15 @@ public class Scene{
     public float[] getLightPos(){
         return light.getPos();
     }
+    public void setFocal(float newFocal){
+        cam.setFocal(newFocal);
+    }
+    public void moveCamera(float[] translate){
+        cam.movePosition(translate);
+    }
+    public void moveLight(float[] translate){
+        light.movePos(translate);
+    }
     public Camera getCamera(){
         return cam;
     }

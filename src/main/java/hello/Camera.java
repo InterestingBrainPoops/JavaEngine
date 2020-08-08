@@ -16,11 +16,14 @@ public class Camera{
     public float getFocal(){
         return focusLen;
     }
-    public void setFocal(float newFocal){
-        focusLen = newFocal;//need to add the update clause to update the focal point itself, but I'm not in the mood to do the math.
-    }
     public float[] getDirection(){
         return dir;
+    }
+    public float[] getPosition(){
+        return pos;
+    }
+    public void setFocal(float newFocal){
+        focusLen = newFocal;//need to add the update clause to update the focal point itself, but I'm not in the mood to do the math.
     }
     public void setDirection(float[] newDirection){
         dir = newDirection; // same here
@@ -28,7 +31,13 @@ public class Camera{
     public void setPosition(float[] newPos){
         pos = newPos;
     }
-    public float[] getPosition(){
-        return pos;
+    public void movePosition(float[] newPos){
+        for(int x = 0; x<3; x++){
+            pos[x]+= newPos[x];
+        }
     }
+    public void setRes(int[] newResolution){
+        res = newResolution;
+    }
+    
 }

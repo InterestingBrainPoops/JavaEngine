@@ -14,6 +14,11 @@ public class Light{
             pos[x] = newPos[x];
         }
     }
+    public void movePos(float[] translate){
+        for(int x = 0; x < 3; x++){
+            pos[x] += translate[x];
+        }
+    }
     public float getBrightness(){
         return intensity;
     }
