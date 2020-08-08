@@ -1,7 +1,7 @@
 package hello;
 //import org.joda.time.LocalTime;
 import com.aparapi.Kernel;
-public class main {
+public class Engine {
 	public static void main(String[] args) {
 		final int size = 2048;
 

@@ -3,10 +3,11 @@ public class Camera{
     private int[] res;
     private float focusLen;
     private float[] dir;
-    public Camera(int[] Resolution, float focalLength, float[] direction){
+    public Camera(int[] Resolution, float focalLength, float[] direction, float[] position){
         res = Resolution;
         focusLen = focalLength;
         dir = direction;
+        pos = position;
     }
     public int[] getRes(){
         return res;
@@ -22,5 +23,11 @@ public class Camera{
     }
     public void setDirection(float[] newDirection){
         dir = newDirection; // same here
+    }
+    public void setPosition(float[] newPos){
+        pos = newPos;
+    }
+    public float[] getPosition(){
+        return pos;
     }
 }
